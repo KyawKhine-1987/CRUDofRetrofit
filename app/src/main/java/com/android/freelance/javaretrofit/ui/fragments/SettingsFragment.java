@@ -229,9 +229,10 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             }
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            String msg = "You just hit the 'No' Button.";
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getActivity(), dialogInterface.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG).show();
             }
         });
 
